@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2020-04-12T13:03:28.625Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/04/12/2020-04-12/</loc>
     
     <lastmod>2020-04-12T11:59:21.195Z</lastmod>
@@ -12,6 +19,34 @@
     <loc>http://yoursite.com/2020/03/21/20-04-12-1/</loc>
     
     <lastmod>2020-04-12T11:59:12.483Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/index.html</loc>
+    
+    <lastmod>2020-04-12T04:03:28.367Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/repository/index.html</loc>
+    
+    <lastmod>2020-04-12T04:03:28.367Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/index.html</loc>
+    
+    <lastmod>2020-04-12T04:03:28.367Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/links/index.html</loc>
+    
+    <lastmod>2020-04-12T04:03:28.367Z</lastmod>
     
   </url>
   
