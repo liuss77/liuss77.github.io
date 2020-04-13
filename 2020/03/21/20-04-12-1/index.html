@@ -17,18 +17,18 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>从零开始，斐讯N1搭建主路由 | Welcome to the Jungle</title>
-  <meta name="description" content="写在前面本人是一个纯正的小白，没有任何编程能力，之前也没接触过软路由，最近因为在家的时间太多，无聊得很，就开始研究家里的各种设备，慢慢的就折腾到了路由器上，从零起步，终于，完成了万里长征第一步，成功的把N1盒子设置成了单臂路由。在这期间，碰到了很多问题，有些可能是大佬们觉得不需要说的，有些可能是我自己没有搜索到的，为了记录自己这几天折腾的过程，也为了给后续和我一样的朋友们扫一下雷，我把自己遇到的问">
+  <title>从零开始，斐讯N1搭建单臂主路由 | Welcome to the Jungle</title>
+  <meta name="description" content="写在前面 最近因为在家的时间太多，无聊得很，就开始研究家里的各种设备，慢慢的就折腾到了路由器上，从零起步，终于，完成了万里长征第一步，成功的把N1盒子设置成了单臂路由。  本文可以说是起到一个搬运汇总的作用，将整个过程中需要的资源汇总到一起，并稍微添加了一些自己的经验。  我只是做了一些微小的工作，感谢原作者的无私奉献。    整体流程   降级与刷入固件 N1盒子OpenWRT设置 插件设置 一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从零开始，斐讯N1搭建主路由">
+<meta property="og:title" content="从零开始，斐讯N1搭建单臂主路由">
 <meta property="og:url" content="http://yoursite.com/2020/03/21/20-04-12-1/index.html">
 <meta property="og:site_name" content="测试blog">
-<meta property="og:description" content="写在前面本人是一个纯正的小白，没有任何编程能力，之前也没接触过软路由，最近因为在家的时间太多，无聊得很，就开始研究家里的各种设备，慢慢的就折腾到了路由器上，从零起步，终于，完成了万里长征第一步，成功的把N1盒子设置成了单臂路由。在这期间，碰到了很多问题，有些可能是大佬们觉得不需要说的，有些可能是我自己没有搜索到的，为了记录自己这几天折腾的过程，也为了给后续和我一样的朋友们扫一下雷，我把自己遇到的问">
+<meta property="og:description" content="写在前面 最近因为在家的时间太多，无聊得很，就开始研究家里的各种设备，慢慢的就折腾到了路由器上，从零起步，终于，完成了万里长征第一步，成功的把N1盒子设置成了单臂路由。  本文可以说是起到一个搬运汇总的作用，将整个过程中需要的资源汇总到一起，并稍微添加了一些自己的经验。  我只是做了一些微小的工作，感谢原作者的无私奉献。    整体流程   降级与刷入固件 N1盒子OpenWRT设置 插件设置 一">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-20T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-04-12T11:59:12.483Z">
+<meta property="article:modified_time" content="2020-04-13T03:21:54.444Z">
 <meta property="article:author" content="Cijan">
-<meta property="article:tag" content="经验">
+<meta property="article:tag" content="openwrt">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
   <link rel="canonical" href="http://yoursite.com/2020/03/21/20-04-12-1/index.html">
@@ -217,7 +217,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%8F%E9%AA%8C/" rel="tag">经验</a><span class="tag-list-count">2</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openwrt/" rel="tag">openwrt</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -227,7 +227,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/%E7%BB%8F%E9%AA%8C/" style="font-size: 13px;">经验</a>
+      <a href="/tags/blog/" style="font-size: 13px;">blog</a> <a href="/tags/openwrt/" style="font-size: 13px;">openwrt</a>
     </div>
   </div>
 
@@ -270,7 +270,7 @@
                 <a class="category-link" href="/categories/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B/">从零开始</a>
               </p>
               <p class="item-title">
-                <a href="/2020/03/21/20-04-12-1/" class="title">从零开始，斐讯N1搭建主路由</a>
+                <a href="/2020/03/21/20-04-12-1/" class="title">从零开始，斐讯N1搭建单臂主路由</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-20T16:00:00.000Z" itemprop="datePublished">2020-03-21</time>
@@ -298,7 +298,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      从零开始，斐讯N1搭建主路由
+      从零开始，斐讯N1搭建单臂主路由
     </h1>
   
 
@@ -319,7 +319,7 @@
         
   <span class="article-tag">
     <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/%E7%BB%8F%E9%AA%8C/" rel="tag">经验</a>
+	<a class="article-tag-link" href="/tags/openwrt/" rel="tag">openwrt</a>
   </span>
 
 
@@ -331,8 +331,65 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本人是一个纯正的小白，没有任何编程能力，之前也没接触过软路由，最近因为在家的时间太多，无聊得很，就开始研究家里的各种设备，慢慢的就折腾到了路由器上，从零起步，终于，完成了万里长征第一步，成功的把N1盒子设置成了单臂路由。<br>在这期间，碰到了很多问题，有些可能是大佬们觉得不需要说的，有些可能是我自己没有搜索到的，为了记录自己这几天折腾的过程，也为了给后续和我一样的朋友们扫一下雷，我把自己遇到的问题，和觉得需要注意的点，写在下面，仅供参考。</p>
-<h2 id="降级与刷入固件"><a href="#降级与刷入固件" class="headerlink" title="降级与刷入固件"></a>降级与刷入固件</h2><p>整体的N1降级与刷入固件流程，论坛里有很多大佬都做了介绍，在此我贴上对我帮助最大的一个帖子<br><a href="https://www.right.com.cn/forum/thread-3144822-1-1.html" target="_blank" rel="noopener">https://www.right.com.cn/forum/thread-3144822-1-1.html</a></p>
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><ol>
+<li><p>最近因为在家的时间太多，无聊得很，就开始研究家里的各种设备，慢慢的就折腾到了路由器上，从零起步，终于，完成了万里长征第一步，成功的把N1盒子设置成了单臂路由。</p>
+</li>
+<li><p>本文可以说是起到一个搬运汇总的作用，将整个过程中需要的资源汇总到一起，并稍微添加了一些自己的经验。</p>
+</li>
+<li><p>我只是做了一些微小的工作，感谢原作者的无私奉献。</p>
+</li>
+</ol>
+<blockquote>
+<p>整体流程</p>
+</blockquote>
+<ol>
+<li><a href="#降级与刷入固件">降级与刷入固件</a></li>
+<li><a href="#N1盒子OpenWRT设置">N1盒子OpenWRT设置</a></li>
+<li><a href="#插件设置">插件设置</a></li>
+<li><a href="#一些问题的解决方案">一些问题的解决方案</a></li>
+</ol>
+<h2 id="降级与刷入固件"><a href="#降级与刷入固件" class="headerlink" title="降级与刷入固件"></a>降级与刷入固件</h2><p>整体的N1降级与刷入固件流程，恩山论坛里有很多大佬都做了介绍</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.right.com.cn&#x2F;forum&#x2F;thread-3144822-1-1.html</span><br></pre></td></tr></table></figure>
+
+<p>在这一过程中需要注意的点只有一个，就是在这位大佬的七八九步上</p>
+<ul>
+<li>第七步 将OpenWRT固件写入U盘</li>
+<li>第八步 运行N1盒子激活启动.bat</li>
+<li>第九步 将N1盒子断电，插上U盘，通电，显示走码</li>
+</ul>
+<p>如果你运行U盘启动后，不能成功从U盘启动系统，可以试试我的办法。</p>
+<blockquote>
+<p>在写入U盘之后，需要将U盘接入N1盒子，再执行第八步，接着N1盒子会重启，然后直接载入代码，开始运行U盘内的系统。</p>
+</blockquote>
+<p>还有一点小提示是，这位大佬最后运行的代码是将系统写入盒子的emmc内，如果你只是要在U盘里运行系统的话，是不用执行这一步骤的。</p>
+<h2 id="N1盒子OpenWRT设置"><a href="#N1盒子OpenWRT设置" class="headerlink" title="N1盒子OpenWRT设置"></a>N1盒子OpenWRT设置</h2><p>我用的固件是f大的30+o v3版，在此感谢f大的固件。</p>
+<p>需要注意的是，30+版貌似是有bug的，我最先刷的是30+版，wan口始终无法拨号</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.right.com.cn&#x2F;forum&#x2F;thread-981406-1-1.html</span><br></pre></td></tr></table></figure>
+<p>这一过程中，具体的操作流程可以看以下视频，说的非常详细，我就不多赘述了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;0uNntGhMLvI</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的点是，wan口需要小写</p>
+<h2 id="插件设置"><a href="#插件设置" class="headerlink" title="插件设置"></a>插件设置</h2><p>smartDNS</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.right.com.cn&#x2F;forum&#x2F;thread-2621887-1-1.html</span><br></pre></td></tr></table></figure>
+<p>adguardhome</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.right.com.cn&#x2F;forum&#x2F;thread-2635946-1-1.html</span><br></pre></td></tr></table></figure>
+<p>docker</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:&#x2F;&#x2F;www.right.com.cn&#x2F;forum&#x2F;thread-911375-1-1.html</span><br></pre></td></tr></table></figure>
+<h2 id="一些问题的解决方案"><a href="#一些问题的解决方案" class="headerlink" title="一些问题的解决方案"></a>一些问题的解决方案</h2><blockquote>
+<p>升级系统</p>
+</blockquote>
+<p>把新版固件写入U盘， 用U盘启动后，连接OpenWrt的wifi,ssh工具连入 192.168.1.1，密码:password ，也可以接上USB键盘，在主屏幕上按回车进入shell ，之后运行:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd &#x2F;root</span><br><span class="line">.&#x2F;update-to-emmc.sh</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>主题</p>
+</blockquote>
+<p>如果主题安装后遇到显示错乱，白屏，无法进入web界面，请不要惊慌，解决方法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">opkg list-installed|grep luci-theme #查看已安装的主题</span><br><span class="line">opkg remove XXXXXX #XXXXX为需要卸载的安装包名</span><br><span class="line">reboot #重启即可恢复界面</span><br></pre></td></tr></table></figure>
+
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>是的，还是有最后。</p>
+<p>这篇也是从零开始，写的比较早，但是因为发布的晚，就算是第二篇了。</p>
+<p>按照这个系列的操行，我还是得说一句，这只是万里长征的第一步，后面的坑还大着呢。</p>
+<p>那么，欢迎和我一起入坑。</p>
 
       
     </div>
@@ -342,7 +399,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2020/03/21/20-04-12-1/" title="从零开始，斐讯N1搭建主路由" target="_blank" rel="external">http://yoursite.com/2020/03/21/20-04-12-1/</a>
+      <a href="http://yoursite.com/2020/03/21/20-04-12-1/" title="从零开始，斐讯N1搭建单臂主路由" target="_blank" rel="external">http://yoursite.com/2020/03/21/20-04-12-1/</a>
     </li>
     
     <li class="post-copyright-license">
