@@ -16,14 +16,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/contact/index.html</loc>
+    <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2020-04-13T12:31:01.122Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://yoursite.com/contact/index.html</loc>
     
     <lastmod>2020-04-13T12:31:01.122Z</lastmod>
     
@@ -58,7 +58,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/links/index.html</loc>
+    <loc>http://yoursite.com/link/index.html</loc>
     
     <lastmod>2020-04-13T08:50:36.477Z</lastmod>
     
