@@ -1,0 +1,27 @@
+class:
+  class_name: 友情链接
+  link_list:
+    1:
+      name: ouoholly的倉庫
+      link: https://ouoholly.github.io
+      avatar: https://ouoholly.github.io/img/avatar.png
+      descr: 知識無底，學海無涯
+    2:
+      name: JerryC
+      link: https://jerryc.me/
+      avatar: https://jerryc.me/img/avatar.png
+      descr: 今日事，今日畢  
+
+#class2:
+#  class_name: 鏈接無效
+ # link_list:
+  #  1:
+   #   name: 夢xxx
+    #  link: https://blog.xxx.com
+     # avatar: https://xxxx/avatar.png
+      #descr: xxxx
+    #2:
+     # name: xx
+      #link: https://www.axxxx.cn/
+      #avatar: https://x
+      #descr: xx

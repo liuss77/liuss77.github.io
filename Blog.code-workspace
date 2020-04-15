@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "source/_posts"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
