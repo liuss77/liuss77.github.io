@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>从零开始，MacOS基于hexo+github搭建个人blog</title>
+      <link href="/2020/04/12/2020-04-12/"/>
+      <url>/2020/04/12/2020-04-12/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h2 id="说明"><a class="markdownIt-Anchor" href="#说明"></a> 说明</h2><ol><li><p>本人编程能力为0，所写必然简陋且初级,故如标题所写，仅供从零开始。</p></li><li><p>本文记录的就是搭建目前使用的这个blog的方法。</p></li><li><p>本文默认已经安装Homebrew，有GitHub帐号，且已ssh连接，如果没有，请根据相关关键词搜索并设置，也可参考以下链接。</p></li></ol><p><a href="https://blog.csdn.net/WizardtoH/article/details/104744008?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-3&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-3" target="_blank" rel="noopener">homebrew最新国内源安装方法（2020年3月）_网络_WizardtoH-CSDN博客</a><a href="https://blog.csdn.net/v123411739/article/details/44071059/" target="_blank" rel="noopener">Github教程,史上最全github使用方法：github入门到精通_网络_程序员囧辉-CSDN博客</a></p><blockquote><p>整体流程</p></blockquote><ol><li><a href="#%E5%AE%89%E8%A3%85node.js">安装node.js</a></li><li><a href="#%E5%AE%89%E8%A3%85git">安装git</a></li><li><a href="#%E5%AE%89%E8%A3%85hexo">安装hexo</a></li><li><a href="#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98">安装主题</a></li><li><a href="#%E8%BF%9E%E6%8E%A5github">连接github</a></li><li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E6%A1%A3">本地部署</a></li><li><a href="#%E4%B8%8A%E4%BC%A0%E6%96%87%E6%A1%A3">上传文档</a></li></ol><blockquote><p>本人配置</p></blockquote><ol><li>Macos 10.14.6</li><li>Node.js v13.12.0</li><li>Npm 6.14.4</li><li>hexo 3.1.0</li></ol><blockquote><p>重要事项</p></blockquote><p>在搭建的这一过程中，会涉及到两个名为“_config.yml”的文件</p><ol><li><strong>站点配置文件</strong>指的是博客文件根目录下的 _config.yml，即“~/blog/_config.yml”</li><li><strong>主题配置文件</strong>是主题文件夹下的 _config.yml，即“~/blog/themes/主题名/_config.yml”</li></ol><h2 id="安装nodejs"><a class="markdownIt-Anchor" href="#安装nodejs"></a> 安装node.js</h2><blockquote><p>使用Homebrew安装</p></blockquote><pre class="highlight"><code class="">brew install nodejs</code></pre><h2 id="安装git"><a class="markdownIt-Anchor" href="#安装git"></a> 安装git</h2><blockquote><p>使用Homebrew安装</p></blockquote><pre class="highlight"><code class=""> brew install git</code></pre><h2 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo"></a> 安装hexo</h2><pre class="highlight"><code class="">npm install -g hexo-cli #使用npm安装hexohexo init blog #初始化blog#检测是否安装成功hexo new test_my_sitehexo ghexo s#如果成功可通过 http://localhost:4000 预览</code></pre><blockquote><p>安装失败</p></blockquote><p>安装失败多半是权限问题，终端会提示你怎么操作，跟着终端的操作获取权限就可以了</p><h2 id="安装主题"><a class="markdownIt-Anchor" href="#安装主题"></a> 安装主题</h2><blockquote><p>Hexo 安装主题的方式非常简单, 只需要将主题文件拷贝至站点目录的 themes 目录下, 然后修改下配置文件即可</p></blockquote><pre class="highlight"><code class="">cd blog #blog为默认你安装的位置，如果是其他位置请自行更改git clone https://github.com/cofess/hexo-theme-pure.git themes/pure</code></pre><blockquote><p>后续的主题部署与个性化编辑请参考pure主题的作者<br /><a href="https://github.com/cofess/hexo-theme-pure/blob/master/README.cn.md" target="_blank" rel="noopener">hexo-theme-pure/README.cn.md at master · cofess/hexo-theme-pure · GitHub</a></p></blockquote><h2 id="连接github"><a class="markdownIt-Anchor" href="#连接github"></a> 连接github</h2><blockquote><p>修改<strong>站点配置文件</strong> _config.yml的deploy部分</p></blockquote><pre class="highlight"><code class=""># Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy:type: gitrepo: https://github.com/XXXXXX/XXXXXX.github.io.gitbranch: master#repo 为你自己的GitHub Pages 链接</code></pre><h2 id="本地部署"><a class="markdownIt-Anchor" href="#本地部署"></a> 本地部署</h2><pre class="highlight"><code class="">npm install hexo-deployer-git --save #安装git部署插件#输入部署指令hexo clean #清除缓存hexo g #生成本地文件夹hexo d #发布到GitHub</code></pre><h2 id="上传文档"><a class="markdownIt-Anchor" href="#上传文档"></a> 上传文档</h2><blockquote><p>找到source文件夹下的_posts，将markdown文件放在此文件夹中。<br />在上传的markdown文档的首部添加如下信息（请删除掉注释）：</p></blockquote><pre class="highlight"><code class="">---title: New Blog    #在此处添加你的标题。date: bulabula   #在此处输入你编辑这篇文章的时间。categories: bulabula   #在此处输入这篇文章的分类。toc: true  #在此处设定是否开启目录，需要主题支持。---</code></pre><blockquote><p>完成之后先预览一下</p></blockquote><pre class="highlight"><code class="">cd blog #blog为默认你安装的位置，如果是其他位置请自行更改hexo ghexo s#如果成功可通过 http://localhost:4000 预览</code></pre><blockquote><p>发布到GitHub</p></blockquote><pre class="highlight"><code class="">hexo cleanhexo ghexo d</code></pre><h2 id="最后"><a class="markdownIt-Anchor" href="#最后"></a> 最后</h2><p>从零开始搭建bolg这就完成了，但是你以为这样你就可以安心的使用了吗?</p><p>图样图拿衣服。</p><p>这只是万里长征第一步，之后的各种个性化设置和插件才是大坑。</p><p>恭喜你，掉进坑里了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 从零开始 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>从零开始，斐讯N1搭建单臂主路由</title>
       <link href="/2020/03/21/20-04-12-1/"/>
       <url>/2020/03/21/20-04-12-1/</url>
