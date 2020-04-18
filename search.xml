@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>hexo主题Butterfly个性化与一些使用技巧</title>
+      <link href="/2020/04/16/hexo-zhu-ti-butterfly-ge-xing-hua/"/>
+      <url>/2020/04/16/hexo-zhu-ti-butterfly-ge-xing-hua/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><p>##写在心力憔悴之后</p><p>TODO: 明天写这个</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 美化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>从零开始，MacOS基于hexo+github搭建个人blog</title>
       <link href="/2020/04/12/2020-04-12/"/>
       <url>/2020/04/12/2020-04-12/</url>
